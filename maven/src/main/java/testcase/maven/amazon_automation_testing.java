@@ -31,8 +31,8 @@ public class amazon_automation_testing {
 	public static void launch(){
 		System.out.println("Before starting the test,Make sure you have average internet speed to test.");
 		inputDetails();
-//		System.out.println("Enter path to chromedriver.exe file:");
-//	    pathToChromeDriverExe = sc.nextLine();
+		System.out.println("Enter path to chromedriver.exe file:");
+	    pathToChromeDriverExe = sc.nextLine();
 		System.setProperty("webdriver.chrome.driver",pathToChromeDriverExe);
 	    driver = new ChromeDriver();
 	    driver.get("https://www.amazon.in/");
